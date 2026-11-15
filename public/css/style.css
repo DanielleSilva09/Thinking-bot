@@ -1,0 +1,343 @@
+
+/* THINKING-BOT - AZUL E BRANCO */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0b1930;
+    color: #f1f7ff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px max(5%, calc((100% - 1120px)/2));
+    border-top: 2px solid #61b8ff;
+    border-bottom: 1px solid #294b70;
+    background: #102744;
+}
+
+.marca {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.marca span {
+    color: #61b8ff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #f1f7ff;
+}
+
+nav a:hover {
+    color: #61b8ff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    padding: 35px 24px 80px;
+    min-height: 75vh;
+}
+
+/* PÁGINA INICIAL */
+
+.hero {
+    background: radial-gradient(
+        circle at 85% 20%,
+        #285b87,
+        #183b63 55%,
+        #102744
+    );
+    border: 1px solid #35648d;
+    border-radius: 20px;
+    padding: 90px 7%;
+    margin: 18px 0 40px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #61b8ff;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
+    margin: 14px 0;
+    color: #ffffff;
+}
+
+h2 {
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 520px;
+    font-size: 19px;
+    color: #d8e8fa;
+}
+
+/* BOTÕES */
+
+.botao,
+button {
+    display: inline-block;
+    background: #61b8ff;
+    color: #0b1930;
+    border: 0;
+    border-radius: 7px;
+    padding: 12px 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.botao:hover,
+button:hover {
+    background: #a5d9ff;
+}
+
+/* PAINEL INICIAL */
+
+.painel {
+    background: #102744;
+    border: 1px solid #35648d;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+.painel h2 {
+    color: #ffffff;
+}
+
+.painel p {
+    color: #d8e8fa;
+}
+
+/* ATIVIDADES */
+
+.cabecalho p,
+.contador,
+.subtitulo {
+    color: #b9d0e7;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.pesquisa input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #456b90;
+    background: #102744;
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 13px;
+    font-size: 16px;
+}
+
+.pesquisa input::placeholder {
+    color: #a8bfd7;
+}
+
+.pesquisa input:focus {
+    outline: 2px solid #61b8ff;
+    outline-offset: 2px;
+}
+
+/* GRELHA DE ATIVIDADES */
+
+.grelha {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(235px, 1fr)
+    );
+    gap: 20px;
+}
+
+/* CARTÕES DAS ATIVIDADES */
+
+.cartaz,
+.cartao-atividade {
+    background: #f1f7ff;
+    color: #173451;
+    border: 7px solid #9ac8ed;
+    border-radius: 4px;
+    text-align: center;
+    padding: 30px 18px;
+    box-shadow: 0 10px 25px #0005;
+}
+
+.wanted,
+.tipo-atividade {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 12px;
+    color: #183b63;
+}
+
+.cartaz h2,
+.cartao-atividade h2 {
+    font-family: Georgia, serif;
+    margin: 10px 0;
+    color: #173451;
+}
+
+.cartaz p,
+.cartao-atividade p {
+    margin: 4px 0 15px;
+    color: #375b7d;
+}
+
+.recompensa,
+.ano-escolar {
+    font-weight: 900;
+    font-size: 22px;
+    border-top: 2px solid #9ac8ed;
+    padding-top: 10px;
+    color: #183b63;
+}
+
+.cartaz a,
+.cartao-atividade a {
+    display: block;
+    margin-top: 15px;
+    color: #1765a3;
+    font-weight: 800;
+}
+
+.cartaz a:hover,
+.cartao-atividade a:hover {
+    color: #0b1930;
+}
+
+/* DETALHES DAS ATIVIDADES */
+
+.voltar {
+    color: #61b8ff;
+}
+
+.voltar:hover {
+    color: #a5d9ff;
+}
+
+.ficha {
+    margin-top: 25px;
+    background: #102744;
+    border: 1px solid #35648d;
+    border-radius: 16px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.ficha h1 {
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.ficha dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px;
+}
+
+.ficha dt {
+    color: #61b8ff;
+    font-weight: bold;
+}
+
+.ficha dd {
+    margin: 0;
+    color: #f1f7ff;
+}
+
+/* MENSAGENS */
+
+.vazio {
+    padding: 20px;
+    background: #183b63;
+    border-radius: 8px;
+    color: #f1f7ff;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    border-top: 1px solid #294b70;
+    padding: 24px;
+    color: #a8bfd7;
+}
+
+/* RESPONSIVO - TELEMÓVEL */
+
+@media (max-width: 620px) {
+
+    .topo {
+        padding: 16px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .marca {
+        font-size: 19px;
+    }
+
+    .container {
+        padding: 20px 15px 50px;
+    }
+
+    .hero {
+        padding: 45px 24px;
+    }
+
+    .ficha {
+        padding: 22px;
+    }
+
+    .ficha h1 {
+        font-size: 32px;
+    }
+
+    .ficha dl {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+    }
+}
