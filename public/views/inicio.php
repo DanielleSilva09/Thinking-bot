@@ -25,8 +25,7 @@
     <h2>O teu próximo passo</h2>
 
     <p>
-        Começa pelo catálogo de atividades
-        e consulta os conteúdos de cada uma.
+        Começa pelo catálogo de atividades e consulta os conteúdos de cada uma.
     </p>
 
 </section>
